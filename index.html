@@ -21,16 +21,18 @@
         Hardik Global Exports
     </div>
 
-    <nav>
+   
+   <nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
 
+    <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-
-    </nav>
-
+    </div>
+</nav>
 </header>
 
 <section class="hero" id="home">
@@ -112,71 +114,142 @@ Contact Us
 
 </section>
 <section class="about" id="about">
+    <div class="about-container">
 
-<h2>About Us</h2>
+        <div class="about-text">
+            <span class="section-tag">ABOUT OUR COMPANY</span>
 
-<p>
+            <h2>Connecting India to the World</h2>
 
-Hardik Global Exports is a trusted Import Export
-Company providing quality products across the globe.
+            <p>
+                Hardik Global Exports is a trusted import-export company
+                focused on delivering quality products to customers and
+                business partners across international markets.
+            </p>
 
-We believe in Quality, Commitment,
-Transparency and Customer Satisfaction.
+            <p>
+                We believe in building long-term partnerships through
+                quality, transparency, reliable service and timely delivery.
+                Our goal is to make international trade simple, efficient
+                and trustworthy.
+            </p>
 
-</p>
+            <div class="about-points">
+                <div>
+                    <strong>✓ Quality</strong>
+                    <span>Reliable products</span>
+                </div>
 
+                <div>
+                    <strong>✓ Global Reach</strong>
+                    <span>International markets</span>
+                </div>
+
+                <div>
+                    <strong>✓ Trusted Service</strong>
+                    <span>Professional support</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <div class="about-card-icon">🌍</div>
+            <h3>Global Trade</h3>
+            <p>
+                Building strong connections between suppliers,
+                businesses and international customers.
+            </p>
+        </div>
+
+    </div>
 </section>
 
+<!-- ===== PRODUCTS SECTION ===== -->
 <section class="products" id="products">
 
-<h2>Our Products</h2>
+    <div class="section-heading">
+        <span>WHAT WE EXPORT</span>
+        <h2>Our Products</h2>
+        <p>
+            Quality products sourced from trusted suppliers
+            and delivered to international markets.
+        </p>
+    </div>
 
-<div class="cards">
+    <div class="product-grid">
 
-<div class="card">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/products/agricultural.jpg" alt="Agricultural Products" class="product-image">
+            <h3>Agricultural Products</h3>
 
-<i class="fa-solid fa-box"></i>
+            <p>
+                Premium quality agricultural products
+                sourced from reliable suppliers in India.
+            </p>
 
-<h3>Agriculture Products</h3>
+            <ul>
+                <li>✔ Rice & Grains</li>
+                <li>✔ Spices</li>
+                <li>✔ Fresh Produce</li>
+            </ul>
 
-<p>
-Rice, Wheat, Spices,
-Pulses and more.
-</p>
+            <a href="#contact" class="product-btn">
+                Enquire Now →
+            </a>
+        </div>
 
-</div>
 
-<div class="card">
+        <!-- Product 2 -->
+        <div class="product-card featured-product">
+           <img src="images/products/textile.jpg"
+     alt="Textile Products"
+     class="product-image">
 
-<i class="fa-solid fa-leaf"></i>
+            <h3>Textile Products</h3>
 
-<h3>Organic Products</h3>
+            <p>
+                Quality textile products manufactured
+                for domestic and international markets.
+            </p>
 
-<p>
+            <ul>
+                <li>✔ Cotton Products</li>
+                <li>✔ Fabrics</li>
+                <li>✔ Garments</li>
+            </ul>
 
-Premium Organic Export
-Quality Products.
+            <a href="#contact" class="product-btn">
+                Enquire Now →
+            </a>
+        </div>
 
-</p>
 
-</div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="images/products/industrial.jpg"
+     alt="Industrial Products"
+     class="product-image">
 
-<div class="card">
+            <h3>Industrial Products</h3>
 
-<i class="fa-solid fa-ship"></i>
+            <p>
+                Reliable industrial products for
+                businesses and international customers.
+            </p>
 
-<h3>Global Shipping</h3>
+            <ul>
+                <li>✔ Packaging Products</li>
+                <li>✔ Industrial Materials</li>
+                <li>✔ General Goods</li>
+            </ul>
 
-<p>
+            <a href="#contact" class="product-btn">
+                Enquire Now →
+            </a>
+        </div>
 
-Fast & Safe International
-Shipping.
-
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
@@ -214,93 +287,162 @@ Shipping.
 
 </section>
 
+<!-- ===== CONTACT SECTION ===== -->
 <section class="contact" id="contact">
 
-<h2>Contact Us</h2>
+    <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Contact Us</h2>
+        <p>
+            Have a business enquiry? Contact Hardik Global Exports
+            and let's build a successful international partnership.
+        </p>
+    </div>
 
-<form id="contactForm">
+    <div class="contact-container">
 
-    <label for="name">Your Name</label>
-    <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
+        <!-- Contact Information -->
+        <div class="contact-info">
 
-    <label for="email">Email Address</label>
-    <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email Address"
-        required
-    >
+            <h3>Let's Work Together</h3>
 
-    <label for="message">Your Message</label>
-    <textarea
-        id="message"
-        name="message"
-        placeholder="Your Message"
-        rows="6"
-        required
-    ></textarea>
+            <p>
+                We are ready to discuss your import-export
+                requirements and business opportunities.
+            </p>
 
-    <button type="submit">Send Message</button>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 XXXXX XXXXX</p>
+                </div>
+            </div>
 
-</form>
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <h4>Email</h4>
+                    <p>hardikglobalexports@gmail.com</p>
+                </div>
+            </div>
 
-</section>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h4>Location</h4>
+                    <p>Gujarat, India</p>
+                </div>
+            </div>
 
+            <a
+                href="https://wa.me/91XXXXXXXXXX"
+                target="_blank"
+                class="whatsapp-btn">
+                💬 Chat on WhatsApp
+            </a>
 
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div>
-            <h3>Hardik Global Exports</h3>
-            <p>Trusted Import & Export Partner Worldwide.</p>
         </div>
 
-        <div>
-            <h3>Quick Links</h3>
 
-            <a href="#home">Home</a><br>
-            <a href="#about">About</a><br>
-            <a href="#products">Products</a><br>
-            <a href="#contact">Contact</a>
-        </div>
+        <!-- Contact Form -->
+        <div class="contact-form">
 
-        <div>
-            <h3>Contact</h3>
+            <h3>Send an Enquiry</h3>
 
-            <p>📧 info@hardikglobalexports.com</p>
-            <p>📞 +91 XXXXX XXXXX</p>
-            <p>📍 Gujarat, India</p>
+            <form id="contactForm">
+
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    id="phone"
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                <input
+                    id="product"
+                    type="text"
+                    placeholder="Product / Requirement"
+                    required>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                <button type="submit">
+                    Send Enquiry →
+                </button>
+
+            </form>
 
         </div>
 
     </div>
 
-    <hr>
+</section>
 
-    <p class="copy">
-        © 2026 Hardik Global Exports | All Rights Reserved.
-    </p>
-
-</footer>
-<p>
-
-© 2026 Hardik Global Exports
-
-All Rights Reserved.
-
-</p>
-
-</>
+ 
 
 <script src="script.js"></script>
 
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>Hardik Global Exports</h2>
+            <p>
+                Connecting India to the world through
+                quality, trust and reliable export solutions.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📍 Gujarat, India</p>
+            <p>
+    📧 <a href="mailto:hardikglobalexports@gmail.com">
+        hardikglobalexports@gmail.com
+    </a>
+</p>
+           <p>
+    📞 <a href="tel:+918469795585">
+        +91 84697 95585
+    </a>
+</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Hardik Global Exports. All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
 </body>
 </html>

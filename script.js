@@ -37,25 +37,37 @@ header.style.boxShadow="none";
 
 // Contact Form - WhatsApp
 document.getElementById("contactForm").addEventListener("submit", function(event) {
+
     event.preventDefault();
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const product = document.getElementById("product").value;
     const message = document.getElementById("message").value;
 
     const whatsappNumber = "918469795585";
 
-   const whatsappMessage =
-    "Hello Hardik Global Exports,%0A%0A" +
-    "Name: " + encodeURIComponent(name) + "%0A" +
-    "Email: " + encodeURIComponent(email) + "%0A" +
-    "Message: " + encodeURIComponent(message);
+    const whatsappMessage =
+        "Hello Hardik Global Exports,%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Product / Requirement: " + encodeURIComponent(product) + "%0A" +
+        "Message: " + encodeURIComponent(message);
 
-const whatsappURL =
-    "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
 
-window.open(whatsappURL, "_blank");
+    window.open(whatsappURL, "_blank");
 
-this.reset();
-   
+    this.reset();
+
+});
+// Mobile Hamburger Menu
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
 });
