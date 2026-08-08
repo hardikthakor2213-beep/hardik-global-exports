@@ -25,10 +25,23 @@ header{
     z-index:1000;
 }
 
-.logo{
-    color:#fff;
-    font-size:28px;
-    font-weight:700;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
 }
 
 nav a{
@@ -52,7 +65,7 @@ nav a:hover{
     color:#fff;
     padding:120px 20px 60px;
 
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("./images/hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("hero.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -361,7 +374,7 @@ footer p{
 
 /* MOBILE */
 
-@media(max-width:768px){
+@media (max-width:600px){
 
 header{
     flex-direction:column;
@@ -1181,7 +1194,7 @@ nav a:hover::after{
     box-shadow: 0 10px 30px rgba(0, 40, 80, 0.08);
     transition: 0.35s ease;
     position: relative;
-    overflow: hidden;
+
 }
 
 .product-card::before {
@@ -1280,34 +1293,74 @@ nav a:hover::after{
     border-radius: 12px 12px 0 0;
     margin-bottom: 20px;
 }
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* ===== FINAL SCROLL FIX ===== */
 
-@media (max-width: 768px) {
+html {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
-    .product-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 0 20px;
-    }
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
-    .product-card {
-        width: 100%;
-    }
+section {
+    max-width: 100%;
+}
+/* ===== SCROLL RESTORE ===== */
 
-    .product-card .product-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
+html,
+body {
+    width: 100%;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
 
-    .section-heading h2 {
-        font-size: 30px;
-    }
+body {
+    position: static !important;
+}
 
-    .section-heading p {
-        font-size: 15px;
-        padding: 0 15px;
-    }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section,
+footer {
+    position: relative;
+}
+
+* {
+    max-width: 100%;
+}
+/* ===== HEADER MENU FIX ===== */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header nav a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block;
+}
+
+header nav a:hover {
+    color: #ffd700 !important;
 }
